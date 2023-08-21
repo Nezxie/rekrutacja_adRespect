@@ -3,99 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0" />
     <title>giarddesign</title>
 </head>
-<body>
-    <header>
-        <img>
-        <ul>
-            <li>Oferta</li>
-            <li>O firmie</li>
-            <li>Realizacje</li>
-            <li>Kontakt</li>
-        </ul>
-        <div id="search-box">
-
+<body class="font-inter text-custom_black">
+    
+    <header class="bg-custom_white py-6 mx-22 max-w-7xl grid grid-cols-2 justify-end">
+        <img class="justify-start" src="./media/logo-giarddesign.png">
+        <div>
+            <ul class="flex text-sm">
+                <li class="flex">Oferta<span class="material-symbols-outlined">expand_more</span></li>
+                <li>O firmie</li>
+                <li>Realizacje</li>
+                <li>Kontakt</li>
+            </ul>
+            <div id="search-box">
+                <span class="material-symbols-outlined">search</span>
+            </div>
         </div>
     </header>
-    <div class="slider">
-        <h2>Nowoczesna aranżacja
-            Twojego ogrodu </h2>
-        <p>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
-        <button>Skontaktuj się z nami</button>
-        <button>Zobacz nasze realizacje</button>        
+
+    <div class="slider bg-custom_beige flex">
+        <div class="mr-16 ml-22 flex flex-col justify-center align-middle">
+            <h2 class="font-montserrat text-6xl font-medium mb-11">Nowoczesna<br>aranżacja<br>Twojego ogrodu</h2>
+            <p class="mb-18 max-w-lg">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+            <div class="flex">
+                <button class="bg-custom_green text-custom_grey px-6 pt-3 pb-3.5 rounded-3xl mr-9">Skontaktuj się z nami</button>
+                <button class="text-custom_green px-6 pt-3 pb-3.5 rounded-3xl border-custom_green border flex">Zobacz nasze realizacje <span class="material-symbols-outlined ml-0.5">arrow_downward</span></button>        
+            </div>
+        </div>
+            <img src="./media/Photo-1.png">
     </div>
 
-    <div>
-        <p>Oferta</p>
-        <h2>Działamy kompleksowo</h2>
-        <p>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.</p>
-        <div class="card-holder">
-            <div class="card">
-                <img>
-                <h2>Projekty</h2>
-                <p>Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
-                <a>Dowiedz się więcej</a>
+    <div class="bg-custom_grey pt-30 pb-40">
+        <p class="text-xs text-custom_green mb-4 mx-50">Oferta</p>
+        <h2 class="font-montserrat text-5xl mb-8 mx-50">Działamy <span class="font-inter font-medium italic">kompleksowo</span></h2>
+        <p class="mx-50">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.</p>
+        <div class="card-holder mt-24 mx-22 flex justify-center">
+            <div class="card bg-white px-10 py-12 rounded-3xl max-w-sm h-96 flex flex-col justify-between">
+                <div>
+                    <img src="./media/Icon-pensil.png">
+                    <h2 class="font-montserrat text-28 font-medium mt-8">Projekty</h2>
+                    <p>Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+                </div>
+                <a class="text-custom_green cursor-pointer flex border-b-2 border-custom_green w-fit">Dowiedz się więcej <span class="material-symbols-outlined ml-0.5">arrow_forward</span></a>
             </div>
-            <div class="card">
-                <img>
-                <h2>Wizualizacje</h2>
-                <p>Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
-                <a>Dowiedz się więcej</a>
+            <div class="card  bg-white px-10 py-12 rounded-3xl max-w-sm ml-16 h-96 flex flex-col justify-between">
+                <div>
+                    <img src="./media/Icon-eye.png">
+                    <h2 class="font-montserrat text-28 font-medium mt-8">Wizualizacje</h2>
+                    <p>Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+                </div>
+                <a class="text-custom_green cursor-pointer flex border-b-2 border-custom_green w-fit">Dowiedz się więcej <span class="material-symbols-outlined ml-0.5">arrow_forward</span></a>
             </div>    
-            <div class="card">
-                <img>
-                <h2>Realizacje</h2>
-                <p>Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
-                <a>Dowiedz się więcej</a>
+            <div class="card bg-white px-10 py-12 rounded-3xl max-w-sm ml-16 h-96 flex flex-col justify-between">
+                <div>
+                    <img src="./media/Icon-stars.png">
+                    <h2 class="font-montserrat text-28 font-medium mt-8">Realizacje</h2>
+                    <p>Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+                </div>
+                <a class="text-custom_green cursor-pointer flex border-b-2 border-custom_green w-fit">Dowiedz się więcej <span class="material-symbols-outlined ml-0.5">arrow_forward</span></a>
             </div>
         </div>         
     </div>
 
-    <div>
-        <p>O firmie</p>
-        <h2>Tworzymy z pasją</h2>
+    <div class="bg-custom_green text-custom_grey">
+        <img src="./media/Photo-2.png">
+        <p class="text-xs text-custom_grey mb-4">O firmie</p>
+        <h2 class="font-montserrat text-5xl mb-10">Tworzymy z <span class="font-inter font-medium italic">pasją</span></h2>
         <p>Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
-        <button>Poznaj nas bliżej</button> 
+        <button class="text-custom_grey px-6 pt-3 pb-3.5 rounded-3xl border-custom_grey border flex">Poznaj nas bliżej <span class="material-symbols-outlined ml-0.5">arrow_forward</span></button> 
     </div>
     
-    <div>
-        <p>Realizacje</p>
-        <h2>Nasze projekty</h2>
+    <div class="bg-custom_beige pb-11 pt-30">
+        <p class="text-xs text-custom_green mb-4">Realizacje</p>
+        <h2 class="font-montserrat text-5xl mb-24">Nasze <span class="font-inter font-medium italic">projekty</span></h2>
         <div class="gallery"></div>
+        <button class="bg-transparent text-custom_black px-6 pt-3 pb-3.5 rounded-3xl border-custom_black border flex">Rozwiń <span class="material-symbols-outlined ml-0.5">arrow_downward</span></button>
     </div>
 
-    <div>
-        <h2>Zostańmy w kontakcie! Znajdziesz nas na Instagramie.</h2>
-        <div>
-            <p>Śledź nasze najnowsze realizacje!</p>
-            <button>Instagram</button>
+    <div class="bg-custom_grey">
+        <div class="bg-custom_green text-custom_grey my-15 py-30 mx-50">
+            <h2 class="font-montserrat text-4xl" >Zostańmy w kontakcie!<br>Znajdziesz nas na <span class="font-inter font-medium italic">Instagramie</span>.</h2>
+            <div>
+                <p>Śledź nasze najnowsze realizacje!</p>
+                <button class="bg-custom_grey text-custom_green px-6 pt-2.5 pb-3 rounded-3xl">Instagram</button>
+            </div>
         </div>
     </div>
 
-    <footer>
-        <img>
-        <p>Daj znać, co możemy dla Ciebie zrobić!</p>
-        <button>Skontaktuj się z nami</button>
-        <line></line>
-        <div>
-            <div>
+    <footer class="bg-custom_black text-custom_grey py-20 px-50">
+        <div class="pb-8 border-b-2 border-custom_grey grid grid-cols-2 justify-self-start items-center">
+            <img src="./media/logo-giarddesign-light.png">
+            <div class="justify-self-end flex justify-between items-center">
+                <p>Daj znać, co możemy dla Ciebie zrobić!</p>
+                <button class="bg-custom_green text-custom_grey px-6 pt-3 pb-3.5 rounded-3xl ml-6">Skontaktuj się z nami</button>
+            </div>
+        </div>
+        <div class="mt-8 mb-30 grid grid-cols-2 justify-self-start text-sm">
+            <div class="flex justify-between">
                 <a>Kontakt</a>
                 <a>Instagram</a>
                 <a>Facebook</a>
                 <a>LinkedIn</a>
             </div>
-            <div>
+            <div class="justify-self-end flex justify-between">
                 <a>000-000-000</a>
                 <a>giarddesign@kontakt.pl</a>
             </div>
         </div>
-        <p>Prawa zastrzeżone © 2022</p>
-    <div>
-        <p>made by</p>
-        <img>
-    </div>
+        <div class="grid grid-cols-2 justify-self-start">
+            <p>Prawa zastrzeżone © 2022</p>
+            <div class="flex justify-self-end">
+                <p>made by</p>
+                <img src="./media/logo-adRespect.png" class="ml-1">
+            </div>
+        </div>
     </footer>
 </body>
 </html>
