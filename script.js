@@ -1,1 +1,8 @@
-//https://fonts.google.com/icons?selected=Material+Symbols+Outlined:arrow_forward:FILL@0;wght@400;GRAD@0;opsz@48
+var elem = document.querySelector('#gallery');
+var msnry = new Masonry( elem, {
+  // options
+  itemSelector: '.gallery-grid-item',
+  columnWidth: 450,
+  horizontalOrder: true,
+  gutter: 45
+});
