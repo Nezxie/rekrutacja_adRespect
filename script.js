@@ -50,7 +50,7 @@ const options = {
 function initGallery(){
   let gallery = document.querySelector('#gallery');
   let msnry = new Masonry( gallery, options);
-  setTimeout(function(){msnry.layout()},500);
+  setTimeout(function(){msnry.layout()},200);
   return {gallery,msnry}
 }
 
