@@ -36,15 +36,40 @@ arrowLeft.addEventListener('click',backward);
 
 
 //mansonry
-var elem = document.querySelector('#gallery');
-var msnry = new Masonry( elem, {
-  // options
+const gallery = document.querySelector('#gallery');
+const buttonDiv = document.querySelector('#gallery-btn-holder');
+const galleryButton = document.querySelector('#gallery-btn-holder>button');
+const galleryContainer = document.querySelector('#gallery-container');
+const options = {
   itemSelector: '.gallery-grid-item',
   percentPosition: true,
   columnWidth: '.gallery-grid-sizer',
   gutter: 44,
-});
-function reloadGallery(){
-  msnry.layout()
 }
-setTimeout(reloadGallery,500);
+
+function initGallery(){
+  let gallery = document.querySelector('#gallery');
+  let msnry = new Masonry( gallery, options);
+  setTimeout(function(){msnry.layout()},500);
+  return {gallery,msnry}
+}
+
+function loadMore(firstID,lastID){
+  gallery.remove();
+  buttonDiv.remove();
+  for(let i = firstID; i < lastID+1; i++){
+  let newImg = document.createElement('div');
+  newImg.className = 'gallery-grid-item mb-11';
+  newImg.innerHTML = `<img src="./media/Photogalery-${i}.png">`
+  gallery.appendChild(newImg);
+}
+  galleryContainer.appendChild(gallery);
+  initGallery();
+
+}
+
+let {galeryDom, galeryMsnry } = initGallery();
+
+galleryButton.addEventListener('click',function(){
+  loadMore(6,9)
+});
