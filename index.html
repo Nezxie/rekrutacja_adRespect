@@ -111,19 +111,22 @@
         </div>
     </div>
     
-    <div class="bg-custom_beige pb-11 pt-30 grid">
+    <div class="bg-custom_beige pb-11 pt-30 grid relative" >
         <div class="ml-18">
             <p class="text-xs text-custom_green mb-4">Realizacje</p>
             <h2 class="font-montserrat text-5xl mb-24">Nasze <span class="font-inter font-medium italic">projekty</span></h2>
-        </div>
-
+        </div>        
         <div id="gallery">
-            <div class="gallery-grid-item max-w-md"><img src="./media/Photogalery-1.png" alt=""></div>
-            <div class="gallery-grid-item max-w-md"><img src="./media/Photogalery-3.png" alt=""></div>
-            <div class="gallery-grid-item  max-w-md"><img src="./media/Photogalery-2.png" alt=""></div>
+            <div class="gallery-grid-sizer h-0 w-gallery-col-size"></div>
+            <div class="gallery-grid-item mb-11"><img src="./media/Photogalery-1.png" alt=""></div>
+            <div class="gallery-grid-item mb-11"><img src="./media/Photogalery-2.png" alt=""></div>
+            <div class="gallery-grid-item mb-11"><img src="./media/Photogalery-3.png" alt=""></div>
+            <div class="gallery-grid-item mb-11"><img src="./media/Photogalery-4.png" alt=""></div>
+            <div class="gallery-grid-item mb-11"><img src="./media/Photogalery-5.png" alt=""></div>
         </div>
- 
-        <button class="relative bottom-12 justify-self-center bg-transparent text-custom_black px-6 pt-3 pb-3.5 rounded-3xl border-custom_black border flex transition ease-in-out duration-300 hover:border-transparent hover:bg-custom_black hover:text-custom_white">Rozwiń <span class="material-symbols-outlined ml-0.5">arrow_downward</span></button>
+        <div class="absolute bottom-20 h-3/6 w-full bg-gradient-to-t from-custom_beige pt-40 flex items-end justify-center ">
+            <button class="relative bottom-11 bg-transparent text-custom_black px-6 pt-3 pb-3.5 rounded-3xl border-custom_black border flex transition ease-in-out duration-300 hover:border-transparent hover:bg-custom_black hover:text-custom_white">Rozwiń <span class="material-symbols-outlined ml-0.5">arrow_downward</span></button>
+        </div>
     </div>
 
     <div class="bg-custom_grey py-15">

@@ -24,7 +24,8 @@ module.exports = {
         '22':'5.6rem',
         '30': '7.5rem',
         '50': '12.5rem',
-        'max-baner-photo':'46rem'
+        'max-baner-photo':'46rem',
+        'gallery-col-size':'28.125rem'
       }
     }    
   },
