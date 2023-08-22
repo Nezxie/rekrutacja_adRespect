@@ -23,7 +23,8 @@ module.exports = {
         '18': '4.5rem',
         '22':'5.6rem',
         '30': '7.5rem',
-        '50': '12.5rem'
+        '50': '12.5rem',
+        'max-baner-photo':'46rem'
       }
     }    
   },
